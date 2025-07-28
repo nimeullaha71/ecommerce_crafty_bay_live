@@ -15,12 +15,10 @@ class CraftyBay extends StatefulWidget {
 class _CraftyBayState extends State<CraftyBay> {
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       initialRoute: SplashScreen.name,
-
       theme: AppTheme.lightThemeData,
-
       onGenerateRoute: AppRoutes.routes,
     );
-}
+  }
 }
