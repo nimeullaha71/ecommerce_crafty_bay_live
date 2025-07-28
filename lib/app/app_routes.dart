@@ -1,5 +1,6 @@
 import 'package:ecommerce_crafty_bay_live/features/auth/ui/screens/login_screen.dart';
 import 'package:ecommerce_crafty_bay_live/features/auth/ui/screens/sign_up_screen.dart';
+import 'package:ecommerce_crafty_bay_live/features/home/ui/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -17,6 +18,9 @@ class AppRoutes{
     }
     else if(settings.name == SignUpScreen.name){
       screenWidget = SignUpScreen();
+    }
+    else if (settings.name==HomeScreen.name){
+      screenWidget = HomeScreen();
     }
     return MaterialPageRoute(builder: (context)=>screenWidget);
   }
